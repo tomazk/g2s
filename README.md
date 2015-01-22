@@ -24,7 +24,7 @@ if err != nil {
 s.Counter(1.0, "my.silly.counter", 1)
 s.Timing(1.0, "my.silly.slow-process", time.Since(somethingBegan))
 s.Timing(0.2, "my.silly.fast-process", 7*time.Millisecond)
-s.Gauge(1.0, "my.silly.status", "green")
+s.Gauge(1.0, "my.silly.status", 1)
 ```
 
 If you use a standard UDP connection to a statsd server, all 'update'-class
